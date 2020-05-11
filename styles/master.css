@@ -2,11 +2,17 @@
 
 .hero{
     background-color: var(--background-grey-color);
+    text-align: center;
 }
 
 .hero .main-text{
     color: var(--white-color);
+
+    font-weight: 900;
     font-size: 44px;
+    line-height: 1.36;
+    
+    letter-spacing: 0.06em;
     text-transform: uppercase;
 }
 
@@ -20,11 +26,25 @@
     font-size: 36px;
 }
 
-.section-title.invisible{
-    visibility: hidden;
+/*Our Benefits section*/
+.benefits-list{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 
-/*Our Benefits section*/
+.benefits-list>li{
+    width: 278px;
+}
+.benefits-list img{
+
+}
+
+.benefits-list .title,
+.benefits-list .description{
+    text-align: left;
+}
+
 .benefits-list .title{
     text-transform: uppercase;
     font-size: 14px;
@@ -78,4 +98,19 @@
 
 /*Clients section*/
 
+.clients-list{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.clients-list>li{
+    width: 175px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    margin: 20px;
+    text-align: center;
+}
 
+.clients-list>li:hover{
+    border-color: var(--accent-color);
+}

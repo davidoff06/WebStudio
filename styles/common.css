@@ -8,30 +8,43 @@
     --background-grey-color: #605f5f;
     --background-dark-grey-color: #2F303A;
     --background-btn-color: #F5F4FA;
+
+    --footer-secondary-color: rgba(255, 255, 255, 0.6);
   }
 
 body {
     background-color: var(--white-color);
-    font-family: 'Roboto';
+    color: var(--main-color);
+
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-style: normal;
-    display: block;
     letter-spacing: 0.03em;
+
+    display: block;
 }
 
 ul{
     list-style: none;
 }
 
+address{
+    font-style: normal;
+}
+
 .btn{   
-    display: inline-block;
     background-color: var(--background-btn-color);
     color: var(--main-color);
+   
+    font-weight: 700;
+    font-size: 16px;
+
+    display: inline-block;
+    border: none;
     border-radius: 4px;
     padding: 10px 20px;
     text-decoration: none;
-    font-weight: 700;
-    font-size: 16px;
+   
     cursor: pointer;
 }
 
@@ -47,10 +60,12 @@ ul{
 }
 
 .link{
-    text-decoration: none;
     color: var(--main-color);
+
     font-weight: 500;
     font-size: 14px;
+
+    text-decoration: none;
 }
 
 .picture-link{
@@ -58,7 +73,7 @@ ul{
 }
 
 .logo{
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     text-transform: capitalize;
     font-weight: 700;
     font-style: normal;
@@ -68,20 +83,24 @@ ul{
     color: var(--accent-color);
 }
 
-address{
-    font-size: 14px;
-    font-style: normal;    
+.invisible{
+    display: none;
 }
 
-address .link.email,
-address .phone{
-    color: var(--secondary-color);
+.section-title{
+    text-align: center;
+}
+
+.section .title,
+.section .description{
+    text-align: center;
 }
 
 /* Header */
 header .link:hover,
 header .link:focus{
     color: var(--accent-color);
+
     text-decoration: none;
 }
 
@@ -102,6 +121,11 @@ header address{
     letter-spacing: 0.02em;
 }
 
+header address .email,
+header address .phone{
+    color: var(--secondary-color);
+}
+
 /*Footer*/
 footer{
     background-color: var(--background-dark-grey-color);
@@ -115,4 +139,19 @@ footer .logo{
 footer ul>.list-title{
     text-transform: uppercase;
     font-weight: 700;
+}
+
+footer address .email,
+footer address .phone{
+    color: var(--footer-secondary-color);
+}
+
+footer{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.footer-item{
+    width: 300px;
 }
