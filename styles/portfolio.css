@@ -1,0 +1,40 @@
+.portfolio-groups{
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-groups>li{
+    margin: 5px;
+}
+
+.portfolio-items{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-items>li{
+    flex: 0 0 33.333333%;
+    width: 380px;
+    height: 404px;
+}
+
+.portfolio-items .img{
+    display: inherit;
+    background-color: var(--accent-color);
+    width: inherit;
+    height: 294px;
+}
+
+.portfolio-items .details{
+    background-color: var(--white-color);
+}
+
+.portfolio-items .title{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.portfolio-items .group-name{
+    font-size: 16px;
+    color: var(--secondary-color);
+}

@@ -1,0 +1,81 @@
+/*Hero*/
+
+.hero{
+    background-color: var(--background-grey-color);
+}
+
+.hero .main-text{
+    color: var(--white-color);
+    font-size: 44px;
+    text-transform: uppercase;
+}
+
+/* Section */
+.section{
+    color: var(--main-color);
+}
+
+.section-title{
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.section-title.invisible{
+    visibility: hidden;
+}
+
+/*Our Benefits section*/
+.benefits-list .title{
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.benefits-list .description{
+    color: var(--secondary-color);
+}
+
+/*What we do section*/
+
+.what-we-do-list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;    
+}
+
+.what-we-do-list>li{
+    margin: 10px;
+    width: 380px;
+}
+
+.what-we-do-list .title{
+    text-transform: uppercase;
+    font-size: 14px;
+    background-color: var(--background-grey-color);
+    color: var(--white-color);
+    height: 70px;
+}
+
+/* Our team section*/
+
+.team-list{
+    display: flex;
+    justify-content: center;
+}
+.team-list>li{
+    width: 278px;
+    margin: 10px;
+}
+
+.team-list .title{
+    text-transform: none;
+    font-size: 16px;
+}
+
+.team-list .description{
+    color: var(--secondary-color);
+    font-size: 16px;
+}
+
+/*Clients section*/
+
+

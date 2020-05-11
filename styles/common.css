@@ -1,0 +1,118 @@
+/*General*/
+
+:root {
+    --main-color: #212121;
+    --secondary-color: #757575;
+    --white-color: #FFFFFF;
+    --accent-color: #2196F3;
+    --background-grey-color: #605f5f;
+    --background-dark-grey-color: #2F303A;
+    --background-btn-color: #F5F4FA;
+  }
+
+body {
+    background-color: var(--white-color);
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-style: normal;
+    display: block;
+    letter-spacing: 0.03em;
+}
+
+ul{
+    list-style: none;
+}
+
+.btn{   
+    display: inline-block;
+    background-color: var(--background-btn-color);
+    color: var(--main-color);
+    border-radius: 4px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:active{
+    background-color: var(--accent-color);
+    color: var(--white-color);
+} 
+
+.btn.btn-primary{
+    background-color: var(--accent-color);
+    color: var(--white-color);
+}
+
+.link{
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.picture-link{
+    opacity: 0.5;
+}
+
+.logo{
+    font-family: Raleway;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.logo .logo-accent{
+    color: var(--accent-color);
+}
+
+address{
+    font-size: 14px;
+    font-style: normal;    
+}
+
+address .link.email,
+address .phone{
+    color: var(--secondary-color);
+}
+
+/* Header */
+header .link:hover,
+header .link:focus{
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+header .link.current{
+    text-decoration: underline;
+    text-decoration-color: var(--accent-color);
+}
+
+header .logo{
+    font-size: 26px;
+}
+
+header nav{
+    letter-spacing: 0.02em;
+}
+
+header address{
+    letter-spacing: 0.02em;
+}
+
+/*Footer*/
+footer{
+    background-color: var(--background-dark-grey-color);
+    color: var(--white-color);
+}
+footer .logo{
+    font-size: 22px;
+    color: inherit;
+}
+
+footer ul>.list-title{
+    text-transform: uppercase;
+    font-weight: 700;
+}

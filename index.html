@@ -5,6 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link
+      link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"/>
+  <link rel="stylesheet" href="./styles/common.css">
+  <link rel="stylesheet" href="./styles/master.css">
 </head>
 
 <body>
@@ -12,88 +18,91 @@
   <!-- Шапка сайта -->
   <header>
     <nav>
-      <a href="./index.html">web studio</a>
+      <a href="./index.html" class="link logo"><span class="logo-accent">web</span> studio</a>
             
-      <ul>
-        <li><a href="#">Студия</a></li>
-        <li><a href="#">Портфолио</a></li>  
-        <li><a href="#">Контакты</a></li>
+      <ul >
+        <li><a href="#" class="link current">Студия</a></li>
+        <li><a href="portfolio.html" class="link">Портфолио</a></li>  
+        <li><a href="#" class="link">Контакты</a></li>
       </ul>
     </nav>
 
     <address>
-      <a href="mailto:info@devstudio.com">
+      <a href="mailto:info@devstudio.com" class="link email">
         <img src="./images/envelope(hover).svg" alt="эмэйл" width="16">
         info@devstudio.com.
       </a>
-      <img src="./images/vector.svg" alt="телефон" width="10">
-      <p>+38 096 111 11 11</p>
+      
+      <p class="phone">
+        <img src="./images/vector.svg" alt="телефон" width="10">
+        +38 096 111 11 11
+      </p>
     </address>       
   </header>  
 
   <!-- Секция Герой -->
-  <section>
-    <h1>эффективные решения<br>для вашего бизнеса</h1>
-    <a href="#">Заказать услугу</a>
+  <section class="hero">
+    <h1 class="main-text">эффективные решения<br>для вашего бизнеса</h1>
+    <a href="#" class="btn btn-primary">Заказать услугу</a>
   </section>
 
-  <!-- Секция Преимуществ компании -->
-  <section>
-    <h2>Преимуества нашей компании</h2>
+  <!-- Our Benefits section -->
+  <section class="section">
+    <h2 class="section-title invisible">Преимущества нашей компании</h2>
 
-    <ul>
+    <ul class="benefits-list">
       <li>
         <img src="./images/antenna.svg" alt="спутник" width="70">
-        <h3>Внимание к деталям</h3>
-        <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+        <h3 class="title">Внимание к деталям</h3>
+        <p class="description">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
       </li>
       <li>
         <img src="./images/clock.svg" alt="время" width="70">
-        <h3>Пунктуальность</h3>
-        <p>адача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+        <h3 class="title">Пунктуальность</h3>
+        <p class="description">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
       </li>
       <li>
         <img src="./images/diagram.svg" alt="план" width="70">
-        <h3>Планирование</h3>
-        <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+        <h3 class="title">Планирование</h3>
+        <p class="description">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
       </li>
       <li>
         <img src="./images/astronaut.svg" alt="астронавт" width="70">
-        <h3>Современные технологии</h3>
-        <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+        <h3 class="title">Современные технологии</h3>
+        <p class="description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
       </li>
     </ul>
   </section>
 
-  <!-- Секция Сфер Деятельности -->
-  <section>
-    <h2>Сферы деятельности компании</h2>
+  <!-- What we do -->
+  <section class="section">
+    <h2 class="section-title">Чем мы занимаемся</h2>
 
-    <ul>
+    <ul class="what-we-do-list">
       <li>
         <a href="#"><img src="./images/desktopapp.jpg" alt="десктоп" width="380"></a>
-        <h3>Десктопные приложения</h3>
+        <h3 class="title">Десктопные приложения</h3>
       </li>
       <li>
         <a href="#"><img src="./images/mobileapp.jpg" alt="телефон" width="380"></a>
-        <h3>Мобильные приложения</h3>
+        <h3 class="title">Мобильные приложения</h3>
       </li>
       <li>
         <a href="#"><img src="./images/designer.jpg" alt="дизайн" width="380"></a>
-        <h3>Дизайнерские решения</h3>
+        <h3 class="title">Дизайнерские решения</h3>
       </li>
     </ul>
   </section>
 
   <!-- Секция Команды -->
-  <section>
-    <h2>Наша команда</h2>
+  <section class="section">
+    <h2 class="section-title">Наша команда</h2>
 
-    <ul>
+    <ul class="team-list">
       <li>
         <img src="./images/johnsmit.jpg" alt="фото джон смит" width="280">
-        <h3>John Smith</h3>
-        <p>Product Designer</p>
+        <h3 class="title">John Smith</h3>
+        <p class="description">Product Designer</p>
                 
         <ul>
           <li><a href="#" aria-label="Ссылка на Instagram">Instagram</a></li>
@@ -141,9 +150,9 @@
     </ul>
   </section>
 
-  <!-- Секция Постоянных клиентов -->
-  <section>
-    <h2>Постоянные клиенты</h2>
+  <!-- Clients -->
+  <section class="section">
+    <h2 class="section-title">Постоянные клиенты</h2>
     <ul>
       <li><a href="#"><img src="./images/yaco.svg" alt="ya&co" width="44"></a></li>
       <li><a href="#"><img src="./images/tgline.svg" alt="tgline" width="40"></a></li>
@@ -157,27 +166,27 @@
   <!-- Секция Футера -->
   <footer>
     <address>
-      <a href="./index.html">web studio</a>
-      <p>г. Киев, пр-т Леси Украинки, 26</p>
-      <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-      <p>+38 099 111 11 11</p>
+      <a href="./index.html" class="link logo"><span class="logo-accent">web</span> studio</a>
+      <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
+      <a href="mailto:info@devstudio.com" class="email">info@devstudio.com</a>
+      <p class="phone">+38 099 111 11 11</p>
     </address>
 
     <ul>
-      <li><b>присоединяйтесь</b></li>
+      <li class="list-title">присоединяйтесь</li>
       <li>
 			
         <ul>
-          <li><a href="#" aria-label="Ссылка на Instagram">Instagram</a></li>
-          <li><a href="#" aria-label="Ссылка на Twitter">Twitter</a></li>
-          <li><a href="#" aria-label="Ссылка на Facebook">Facebook</a></li>
-          <li><a href="#" aria-label="Ссылка на LinkedIn">LinkedIn</a></li>
+          <li><a href="#" aria-label="Ссылка на Instagram" class="picture-link">Instagram</a></li>
+          <li><a href="#" aria-label="Ссылка на Twitter" class="picture-link">Twitter</a></li>
+          <li><a href="#" aria-label="Ссылка на Facebook" class="picture-link">Facebook</a></li>
+          <li><a href="#" aria-label="Ссылка на LinkedIn" class="picture-link">LinkedIn</a></li>
         </ul>
       </li>
     </ul>
         
     <ul>
-      <li><b>подпишитесь на рассылку</b></li>
+      <li class="list-title">подпишитесь на рассылку</li>
       <li>
       <!-- Здесь будет форма -->
       </li>
