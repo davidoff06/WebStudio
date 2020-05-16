@@ -1,4 +1,8 @@
 /*General*/
+html{
+    box-sizing: border-box;
+}
+
 
 :root {
     --main-color: #212121;
@@ -14,6 +18,8 @@
   }
 
 body {
+    margin: 0px;
+
     background-color: var(--white-color);
     color: var(--main-color);
 
@@ -21,8 +27,25 @@ body {
     font-size: 14px;
     font-style: normal;
     letter-spacing: 0.03em;
+}
 
-    display: block;
+.container{
+    width: 1200px;
+    margin: 0px auto;/* 0:up&down, auto:right&left */
+    
+    outline: solid aquamarine 1px;
+}
+
+ul,
+p, 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0px;
+    margin: 0px;
 }
 
 ul{
@@ -33,17 +56,19 @@ address{
     font-style: normal;
 }
 
+/* TODO: Add vertical align for text inside */
 .btn{   
-    background-color: var(--background-btn-color);
-    color: var(--main-color);
-   
-    font-weight: 700;
-    font-size: 16px;
-
     display: inline-block;
+    width: 200px;
+    height: 50px;
     border: none;
     border-radius: 4px;
     padding: 10px 20px;
+
+    background-color: var(--background-btn-color);
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 16px;
     text-decoration: none;
    
     cursor: pointer;
@@ -70,10 +95,13 @@ address{
 }
 
 .picture-link{
+    color: turquoise;
     opacity: 0.5;
 }
 
 .logo{
+    margin-right: 86px;
+
     font-family: Raleway, sans-serif;
     text-transform: capitalize;
     font-weight: 700;
@@ -88,16 +116,31 @@ address{
     display: none;
 }
 
-.section-title{
+.section{
+    margin-top: 94px;
     text-align: center;
 }
 
-.section .title,
-.section .description{
-    text-align: center;
+.section-title{
+    display: inline-block;
 }
 
 /* Header */
+
+header{
+    display: flex;
+    align-items: center;
+}
+
+header.container{
+    height: 80px;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+}
+
 header .link:hover,
 header .link:focus{
     color: var(--accent-color);
@@ -112,13 +155,27 @@ header .link.current{
 
 header .logo{
     font-size: 26px;
+    display: inline-block;
 }
 
 header nav{
     letter-spacing: 0.02em;
 }
 
+.nav-list>li{
+    display: inline-flex;
+    align-items: center;    
+    margin-right: 50px;
+    height: 80px;
+}
+
+.nav-list>li:last-child{
+    margin-right: 0px;
+}
+
 header address{
+    margin-left: auto;
+
     letter-spacing: 0.02em;
 }
 
@@ -127,12 +184,39 @@ header address .phone{
     color: var(--secondary-color);
 }
 
+header address .email{
+    margin-right: 50px;
+}
+
+header address img{
+    margin-right: 10px;
+}
+
 /*Footer*/
 footer{
     background-color: var(--background-dark-grey-color);
     color: var(--white-color);
 }
+
+footer .container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: top;
+    padding-top: 48px;
+    padding-bottom: 30px;
+}
+
+footer .adress-list>*{
+    padding-bottom: 10px;
+}
+
+footer .social-media{
+    display: flex;
+}
+
 footer .logo{
+    display: inline-block;
     font-size: 22px;
     color: inherit;
 }
@@ -147,11 +231,6 @@ footer address .phone{
     color: var(--footer-secondary-color);
 }
 
-footer{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-}
 
 .footer-item{
     width: 300px;
