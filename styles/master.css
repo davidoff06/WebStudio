@@ -93,6 +93,10 @@
 
 /* Our team section*/
 
+.team-section{
+    background-color: var(--background-light-grey-color);
+}
+
 section .team-title{
     /* TODO : check if not work */
     display: inline-block;
