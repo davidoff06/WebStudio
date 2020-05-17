@@ -30,9 +30,9 @@ body {
 }
 
 .container{
-    width: 1200px;
+    width: 1230px;
+    padding: 0px 15px;
     margin: 0px auto;
-    /* outline: solid aquamarine 1px; */
 }
 
 ul,
@@ -147,10 +147,6 @@ header .link:focus{
     text-decoration: none;
 }
 
-header .nav-list>.current{
-    border-bottom: 4px solid var(--accent-color);
-}
-
 header .logo{
     font-size: 26px;
     display: inline-block;
@@ -158,25 +154,23 @@ header .logo{
 
 .nav-list{ 
     display: flex;
-    align-items: center;
 }
 
-.nav-list>li{
-    display: flex;
-    align-items: center;
-    height: 80px;
+.nav-list>li:not(:last-child){
     margin-right: 50px;    
 }
 
-.nav-list>li:last-child{
-    margin-right: 0px;
-}
-
-.nav-list>li>a{
+.nav-list>li>.link{
     display: flex;
     align-items: center;
-    height: inherit;
+    height: 80px;
+    border-bottom: 4px transparent solid;
 }
+
+.nav-list .link.current{
+    border-bottom-color: var(--accent-color);
+}
+
 
 header address{
     margin-left: auto;
