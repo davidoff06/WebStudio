@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link
-      link
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css">
+  <link      
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"/>
   <link rel="stylesheet" href="./styles/common.css">
@@ -15,33 +15,33 @@
 
 <body>
     
-  <!-- Шапка сайта -->
-  <header>
+   <!-- Header -->
+   <header class="container">
     <nav>
       <a href="./index.html" class="link logo"><span class="logo-accent">web</span> studio</a>
             
-      <ul >
-        <li><a href="#" class="link">Студия</a></li>
-        <li><a href="#" class="link current">Портфолио</a></li>  
+      <ul class="nav-list">
+        <li><a href="index.html" class="link">Студия</a></li>
+        <li><a href="portfolio.html" class="link current">Портфолио</a></li>  
         <li><a href="#" class="link">Контакты</a></li>
       </ul>
     </nav>
 
     <address>
-        <a href="mailto:info@devstudio.com" class="link email">
-          <img src="./images/envelope(hover).svg" alt="эмэйл" width="16">
-          info@devstudio.com
-        </a>
-
-        <a href="#" class="link phone">
-          <img src="./images/vector.svg" alt="телефон" width="10">
-          +38 096 111 11 11
-        </a>
-      </address>  
+      <a href="mailto:info@devstudio.com" class="link email">
+        <img src="./images/envelope(hover).svg" alt="эмэйл" width="16">
+        info@devstudio.com
+      </a>
+      
+      <a href="#" class="link phone">
+        <img src="./images/vector.svg" alt="телефон" width="10">
+        +38 096 111 11 11
+      </a>
+    </address>       
   </header>  
 
   <!-- main section -->
- <main>
+ <main class="container">
    <h1 class="section-title invisible">Portfolio</h1>
     <ul class="portfolio-groups">
         <li><button type="button" class="btn">Все</button></li>
@@ -138,35 +138,37 @@
 
  </main>
 
-  <!-- Секция Футера -->
+  <!-- Footer -->
   <footer>
-    <address>
-      <a href="./index.html" class="link logo"><span class="logo-accent">web</span> studio</a>
-      <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
-      <a href="mailto:info@devstudio.com" class="email">info@devstudio.com</a>
-      <p class="phone">+38 099 111 11 11</p>
-    </address>
-
-    <ul>
-      <li class="list-title">присоединяйтесь</li>
-      <li>
-			
-        <ul>
-          <li><a href="#" aria-label="Ссылка на Instagram" class="picture-link">Instagram</a></li>
-          <li><a href="#" aria-label="Ссылка на Twitter" class="picture-link">Twitter</a></li>
-          <li><a href="#" aria-label="Ссылка на Facebook" class="picture-link">Facebook</a></li>
-          <li><a href="#" aria-label="Ссылка на LinkedIn" class="picture-link">LinkedIn</a></li>
-        </ul>
-      </li>
-    </ul>
-        
-    <ul>
-      <li class="list-title">подпишитесь на рассылку</li>
-      <li>
-      <!-- Здесь будет форма -->
-      </li>
-    </ul>
-  </footer>
+    <div class="container">
+      <address class="adress-list footer-item">
+        <a href="./index.html" class="link logo"><span class="logo-accent">web</span> studio</a>
+        <p class="full-address">г. Киев, пр-т Леси Украинки, 26</p>
+        <p class="email">info@devstudio.com</p>
+        <p class="phone">+38 099 111 11 11</p>
+      </address>
+  
+      <ul class="footer-item">
+        <li class="list-title">присоединяйтесь</li>
+        <li>			
+          <ul class="social-media">
+            <li><a href="#" aria-label="Ссылка на Instagram" class="picture-link">Instagram</a></li>
+            <li><a href="#" aria-label="Ссылка на Twitter" class="picture-link">Twitter</a></li>
+            <li><a href="#" aria-label="Ссылка на Facebook" class="picture-link">Facebook</a></li>
+            <li><a href="#" aria-label="Ссылка на LinkedIn" class="picture-link">LinkedIn</a></li>
+          </ul>
+        </li>
+      </ul>
+          
+      <ul class="footer-item">
+        <li class="list-title">подпишитесь на рассылку</li>
+        <li class="form">
+        <!-- Здесь будет форма -->
+          <a href="#" class="btn btn-primary btn-fixed-size">Подписаться</a>
+        </li>
+      </ul>
+    </div>
+    </footer>
 
 </body>
 </html>

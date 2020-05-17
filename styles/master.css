@@ -45,7 +45,6 @@
 
 .benefits-list>.list-item{
     width: calc((100% - 90px)/4);
-    /* outline: 2px red solid; */
 }
 
 .benefits-list>li>img{
@@ -104,7 +103,6 @@ section .team-title{
     margin-top: 50px;
     margin-bottom: 94px;
     display: flex;
-    /* justify-content: space-between; */
 }
 .team-list>li{
     width: 278px;
@@ -146,8 +144,7 @@ section .team-title{
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
-    /* TODO: investigate why doesn't work */
-    margin-bottom: 94px;    
+    margin-bottom: 94px;  
 }
 .clients-list>li{
     width: 175px;

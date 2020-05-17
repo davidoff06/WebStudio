@@ -1,5 +1,5 @@
 /*General*/
-html{
+*{
     box-sizing: border-box;
 }
 
@@ -31,9 +31,8 @@ body {
 
 .container{
     width: 1200px;
-    margin: 0px auto;/* 0:up&down, auto:right&left */
-    
-    outline: solid aquamarine 1px;
+    margin: 0px auto;
+    /* outline: solid aquamarine 1px; */
 }
 
 ul,
@@ -56,22 +55,27 @@ address{
     font-style: normal;
 }
 
-/* TODO: Add vertical align for text inside */
 .btn{   
-    display: inline-block;
-    width: 200px;
-    height: 50px;
+    display: inline-block;    
     border: none;
     border-radius: 4px;
-    padding: 10px 20px;
+    padding: 6px 22px;
 
     background-color: var(--background-btn-color);
     color: var(--main-color);
     font-weight: 700;
     font-size: 16px;
+    line-height: 1.87;
     text-decoration: none;
+    text-align: center;
    
     cursor: pointer;
+}
+
+.btn-fixed-size{
+    width: 200px;
+    height: 50px;
+    padding: 10px 32px;
 }
 
 .btn:hover,
@@ -95,7 +99,6 @@ address{
 }
 
 .picture-link{
-    color: turquoise;
     opacity: 0.5;
 }
 
@@ -119,10 +122,6 @@ address{
 .section{
     margin-top: 94px;
     text-align: center;
-}
-
-.section-title{
-    display: inline-block;
 }
 
 /* Header */
@@ -207,6 +206,10 @@ footer .container{
     padding-bottom: 30px;
 }
 
+.footer-item{
+    width: 300px;
+}
+
 footer .adress-list>*{
     padding-bottom: 10px;
 }
@@ -230,8 +233,6 @@ footer address .email,
 footer address .phone{
     color: var(--footer-secondary-color);
 }
-
-
-.footer-item{
-    width: 300px;
+.footer-item .form{
+    margin-top: 21px;
 }
