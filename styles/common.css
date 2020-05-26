@@ -1,7 +1,7 @@
 /*General*/
 
-/* *{
-    outline: 1px solid black;
+/* * {
+  outline: 1px solid black;
 } */
 
 :root {
@@ -196,12 +196,26 @@ header address .phone {
   color: var(--secondary-color);
 }
 
-header address .email {
+header address .link:not(:last-child) {
   margin-right: 50px;
 }
 
-header address img {
+header address .link:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
   margin-right: 10px;
+  background-position: center 100%;
+  background-repeat: no-repeat;
+}
+
+header address .link.email:before {
+  background-image: url("../images/envelope(hover).svg");
+}
+
+header address .link.phone:before {
+  background-image: url("../images/vector.svg");
 }
 
 /*Footer*/
@@ -227,8 +241,44 @@ footer .adress-list > * {
   padding-bottom: 10px;
 }
 
-footer .social-media {
+.social-media-links {
   display: flex;
+}
+
+.social-media-links > .icon-wrapper:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-media-links .icon {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.social-media-links .icon:hover,
+.social-media-links .icon:focus {
+  background-color: var(--accent-color);
+}
+
+.social-media-links .icon.insta {
+  background-image: url("../images/footer.link.instagram.svg");
+}
+
+.social-media-links .icon.twitter {
+  background-image: url("../images/footer.link.twitter.svg");
+}
+
+.social-media-links .icon.facebook {
+  background-image: url("../images/footer.link.facebook.svg");
+}
+
+.social-media-links .icon.linkedIn {
+  background-image: url("../images/footer.link.linkedIn.svg");
 }
 
 footer .logo {
@@ -240,6 +290,7 @@ footer .logo {
 footer ul > .list-title {
   text-transform: uppercase;
   font-weight: 700;
+  margin-bottom: 21px;
 }
 
 footer address .email,
