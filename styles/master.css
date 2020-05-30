@@ -56,7 +56,21 @@
   width: calc((100% - 90px) / 4);
 }
 
-.benefits-list > .list-item:before {
+.benefits-list > .list-item .icon-wrapper {
+  display: block;
+  padding: 25px 102px;
+  background-color: var(--background-light-grey-color);
+}
+
+.icon-wrapper > .icon {
+  width: 67px;
+  height: 70px;
+}
+
+/* 
+  Alternative way to embed icon (using before)
+
+  .benefits-list > .list-item:before {
   content: "";
   display: block;
   height: 120px;
@@ -68,18 +82,7 @@
 .benefits-list > .list-item.antenna:before {
   background-image: url("../images/antenna.svg");
 }
-
-.benefits-list > .list-item.clock:before {
-  background-image: url("../images/clock.svg");
-}
-
-.benefits-list > .list-item.diagram:before {
-  background-image: url("../images/diagram.svg");
-}
-
-.benefits-list > .list-item.astronavt:before {
-  background-image: url("../images/astronaut.svg");
-}
+*/
 
 .benefits-list .title,
 .benefits-list .description {
@@ -125,6 +128,7 @@
 
 .team-section {
   background-color: var(--background-light-grey-color);
+  padding: 94px 0px;
 }
 
 section .team-title {
@@ -134,11 +138,11 @@ section .team-title {
 
 .team-list {
   margin-top: 50px;
-  margin-bottom: 94px;
   display: flex;
 }
 .team-list > li {
   width: 278px;
+  background-color: var(--white-color);
 }
 
 .team-list > li:not(:last-child) {
@@ -160,11 +164,17 @@ section .team-title {
 }
 
 .team-list .social-links {
-  margin-top: 16px;
-  margin-bottom: 24px;
-  display: flex;
-  justify-content: space-evenly;
-  width: 207;
+  margin: 16px 32px 24px;
+}
+
+.team-list .social-links .link {
+  --color4: #afb1b8;
+}
+
+.team-list .social-links .link:hover,
+.team-list .social-links .link:focus {
+  background-color: var(--accent-color);
+  --color4: var(--white-color);
 }
 
 /*Clients section*/
@@ -188,4 +198,24 @@ section .team-title {
 
 .clients-list > li:hover {
   border-color: var(--accent-color);
+}
+
+.clients-list .button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.clients-list .button:hover {
+  --color3: var(--accent-color);
+}
+
+.button > .button-icon {
+  height: 100%;
 }

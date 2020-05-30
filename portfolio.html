@@ -26,20 +26,24 @@
           >
 
           <ul class="nav-list">
-            <li><a href="index.html" class="link">Студия</a></li>
-            <li><a href="portfolio.html" class="link current">Портфолио</a></li>
+            <li><a href="#" class="link current">Студия</a></li>
+            <li><a href="portfolio.html" class="link">Портфолио</a></li>
             <li><a href="#" class="link">Контакты</a></li>
           </ul>
         </nav>
 
         <address>
-          <a href="mailto:info@devstudio.com" class="link email">
-            <img src="./images/envelope(hover).svg" alt="эмэйл" width="16" />
+          <a href="mailto:info@devstudio.com" class="link">
+            <svg class="icon" width="16" height="11">
+              <use href="./images/sprite.svg#headeremail"></use>
+            </svg>
             info@devstudio.com
           </a>
 
-          <a href="#" class="link phone">
-            <img src="./images/vector.svg" alt="телефон" width="10" />
+          <a href="#" class="link">
+            <svg class="icon" width="10" height="15">
+              <use href="./images/sprite.svg#headerphone"></use>
+            </svg>
             +38 096 111 11 11
           </a>
         </address>
@@ -197,32 +201,37 @@
           <p class="phone">+38 099 111 11 11</p>
         </address>
 
-        <ul class="footer-item">
+        <ul class="footer-item join-us">
           <li class="list-title">присоединяйтесь</li>
           <li>
-            <ul class="social-media">
+            <ul class="social-links">
               <li>
-                <a
-                  href="#"
-                  aria-label="Ссылка на Instagram"
-                  class="picture-link"
-                  >Instagram</a
-                >
+                <a href="#" class="link" aria-label="Ссылка на Instagram">
+                  <svg class="link-icon">
+                    <use href="./images/sprite.svg#footerlinkinstagram"></use>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a href="#" aria-label="Ссылка на Twitter" class="picture-link"
-                  >Twitter</a
-                >
+                <a href="#" class="link" aria-label="Ссылка на Twitter">
+                  <svg class="link-icon">
+                    <use href="./images/sprite.svg#footerlinktwitter"></use>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a href="#" aria-label="Ссылка на Facebook" class="picture-link"
-                  >Facebook</a
-                >
+                <a href="#" class="link" aria-label="Ссылка на Facebook">
+                  <svg class="link-icon">
+                    <use href="./images/sprite.svg#footerlinkfacebook"></use>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a href="#" aria-label="Ссылка на LinkedIn" class="picture-link"
-                  >LinkedIn</a
-                >
+                <a href="#" class="link" aria-label="Ссылка на Linkedin">
+                  <svg class="link-icon">
+                    <use href="./images/sprite.svg#footerlinklinkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </li>
@@ -232,7 +241,9 @@
           <li class="list-title">подпишитесь на рассылку</li>
           <li class="form">
             <!-- Здесь будет форма -->
-            <a href="#" class="btn btn-primary btn-fixed-size">Подписаться</a>
+            <a href="#" class="btn btn-primary btn-fixed-size">
+              <span>Подписаться</span></a
+            >
           </li>
         </ul>
       </div>

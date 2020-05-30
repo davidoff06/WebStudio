@@ -9,7 +9,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
     />
     <link
-      link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
@@ -34,11 +33,17 @@
         </nav>
 
         <address>
-          <a href="mailto:info@devstudio.com" class="link email">
+          <a href="mailto:info@devstudio.com" class="link">
+            <svg class="icon" width="16" height="11">
+              <use href="./images/sprite.svg#headeremail"></use>
+            </svg>
             info@devstudio.com
           </a>
 
-          <a href="#" class="link phone">
+          <a href="#" class="link">
+            <svg class="icon" width="10" height="15">
+              <use href="./images/sprite.svg#headerphone"></use>
+            </svg>
             +38 096 111 11 11
           </a>
         </address>
@@ -61,28 +66,48 @@
         </h2>
 
         <ul class="benefits-list">
-          <li class="list-item antenna">
+          <li class="list-item">
+            <div class="icon-wrapper">
+              <svg class="icon">
+                <use href="./images/sprite.svg#benefitsantenna"></use>
+              </svg>
+            </div>
             <h3 class="title">Внимание к деталям</h3>
             <p class="description">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
-          <li class="list-item clock">
+          <li class="list-item">
+            <div class="icon-wrapper">
+              <svg class="icon">
+                <use href="./images/sprite.svg#benefitsclock"></use>
+              </svg>
+            </div>
             <h3 class="title">Пунктуальность</h3>
             <p class="description">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
-          <li class="list-item diagram">
+          <li class="list-item">
+            <div class="icon-wrapper">
+              <svg class="icon">
+                <use href="./images/sprite.svg#benefitsdiagram"></use>
+              </svg>
+            </div>
             <h3 class="title">Планирование</h3>
             <p class="description">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
-          <li class="list-item astronavt">
+          <li class="list-item">
+            <div class="icon-wrapper">
+              <svg class="icon">
+                <use href="./images/sprite.svg#benefitsastronaut"></use>
+              </svg>
+            </div>
             <h3 class="title">Современные технологии</h3>
             <p class="description">
               Значимость этих проблем настолько очевидна, что реализация
@@ -151,14 +176,35 @@
             <p class="description">Product Designer</p>
             <ul class="social-links">
               <li>
-                <a href="#" aria-label="Ссылка на Instagram">Instagram</a>
+                <a href="#" class="link" aria-label="Ссылка на Instagram">
+                  <svg class="link-icon">
+                    <use href="./images/sprite.svg#footerlinkinstagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li><a href="#" aria-label="Ссылка на Twitter">Twitter</a></li>
-              <li><a href="#" aria-label="Ссылка на Facebook">Facebook</a></li>
-              <li><a href="#" aria-label="Ссылка на LinkedIn">LinkedIn</a></li>
+              <li>
+                <a href="#" class="link" aria-label="Ссылка на Twitter">
+                  <svg class="link-icon">
+                    <use href="./images/sprite.svg#footerlinktwitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="link" aria-label="Ссылка на Facebook">
+                  <svg class="link-icon">
+                    <use href="./images/sprite.svg#footerlinkfacebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="link" aria-label="Ссылка на Linkedin">
+                  <svg class="link-icon">
+                    <use href="./images/sprite.svg#footerlinklinkedin"></use>
+                  </svg>
+                </a>
+              </li>
             </ul>
           </li>
-
           <li>
             <img
               src="./images/martastewart.jpg"
@@ -170,14 +216,35 @@
             <p class="description">Frontend Developer</p>
             <ul class="social-links">
               <li>
-                <a href="#" aria-label="Ссылка на Instagram">Instagram</a>
+                <a href="#" class="link" aria-label="Ссылка на Instagram">
+                  <svg class="link-icon">
+                    <use href="./images/sprite.svg#footerlinkinstagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li><a href="#" aria-label="Ссылка на Twitter">Twitter</a></li>
-              <li><a href="#" aria-label="Ссылка на Facebook">Facebook</a></li>
-              <li><a href="#" aria-label="Ссылка на LinkedIn">LinkedIn</a></li>
+              <li>
+                <a href="#" class="link" aria-label="Ссылка на Twitter">
+                  <svg class="link-icon">
+                    <use href="./images/sprite.svg#footerlinktwitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="link" aria-label="Ссылка на Facebook">
+                  <svg class="link-icon">
+                    <use href="./images/sprite.svg#footerlinkfacebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="link" aria-label="Ссылка на Linkedin">
+                  <svg class="link-icon">
+                    <use href="./images/sprite.svg#footerlinklinkedin"></use>
+                  </svg>
+                </a>
+              </li>
             </ul>
           </li>
-
           <li>
             <img
               src="./images/robertjakis.jpg"
@@ -189,14 +256,35 @@
             <p class="description">Marketing</p>
             <ul class="social-links">
               <li>
-                <a href="#" aria-label="Ссылка на Instagram">Instagram</a>
+                <a href="#" class="link" aria-label="Ссылка на Instagram">
+                  <svg class="link-icon">
+                    <use href="./images/sprite.svg#footerlinkinstagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li><a href="#" aria-label="Ссылка на Twitter">Twitter</a></li>
-              <li><a href="#" aria-label="Ссылка на Facebook">Facebook</a></li>
-              <li><a href="#" aria-label="Ссылка на LinkedIn">LinkedIn</a></li>
+              <li>
+                <a href="#" class="link" aria-label="Ссылка на Twitter">
+                  <svg class="link-icon">
+                    <use href="./images/sprite.svg#footerlinktwitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="link" aria-label="Ссылка на Facebook">
+                  <svg class="link-icon">
+                    <use href="./images/sprite.svg#footerlinkfacebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="link" aria-label="Ссылка на Linkedin">
+                  <svg class="link-icon">
+                    <use href="./images/sprite.svg#footerlinklinkedin"></use>
+                  </svg>
+                </a>
+              </li>
             </ul>
           </li>
-
           <li>
             <img
               src="./images/martindoe.jpg"
@@ -208,11 +296,33 @@
             <p class="description">UI Designer</p>
             <ul class="social-links">
               <li>
-                <a href="#" aria-label="Ссылка на Instagram">Instagram</a>
+                <a href="#" class="link" aria-label="Ссылка на Instagram">
+                  <svg class="link-icon">
+                    <use href="./images/sprite.svg#footerlinkinstagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li><a href="#" aria-label="Ссылка на Twitter">Twitter</a></li>
-              <li><a href="#" aria-label="Ссылка на Facebook">Facebook</a></li>
-              <li><a href="#" aria-label="Ссылка на LinkedIn">LinkedIn</a></li>
+              <li>
+                <a href="#" class="link" aria-label="Ссылка на Twitter">
+                  <svg class="link-icon">
+                    <use href="./images/sprite.svg#footerlinktwitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="link" aria-label="Ссылка на Facebook">
+                  <svg class="link-icon">
+                    <use href="./images/sprite.svg#footerlinkfacebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="link" aria-label="Ссылка на Linkedin">
+                  <svg class="link-icon">
+                    <use href="./images/sprite.svg#footerlinklinkedin"></use>
+                  </svg>
+                </a>
+              </li>
             </ul>
           </li>
         </ul>
@@ -225,37 +335,46 @@
         <h2 class="section-title clients-title">Постоянные клиенты</h2>
         <ul class="clients-list">
           <li>
-            <a href="#"
-              ><img src="./images/yaco.svg" alt="ya&co" width="44"
-            /></a>
+            <button class="button" aria-label="Show details Yaco">
+              <svg class="button-icon">
+                <use href="./images/sprite.svg#clientsyaco"></use>
+              </svg>
+            </button>
           </li>
           <li>
-            <a href="#"
-              ><img src="./images/tgline.svg" alt="tgline" width="40"
-            /></a>
+            <button class="button" aria-label="Show details gline">
+              <svg class="button-icon">
+                <use href="./images/sprite.svg#clientstgline"></use>
+              </svg>
+            </button>
           </li>
           <li>
-            <a href="#"
-              ><img src="./images/company.svg" alt="company" width="42"
-            /></a>
+            <button class="button" aria-label="Show details company">
+              <svg class="button-icon">
+                <use href="./images/sprite.svg#clientscompany"></use>
+              </svg>
+            </button>
           </li>
           <li>
-            <a href="#"
-              ><img
-                src="./images/fosterpeters.svg"
-                alt="foster peters"
-                width="82"
-            /></a>
+            <button class="button" aria-label="Show details fosterpeters">
+              <svg class="button-icon">
+                <use href="./images/sprite.svg#clientsfosterpeters"></use>
+              </svg>
+            </button>
           </li>
           <li>
-            <a href="#"
-              ><img src="./images/brand.svg" alt="brand" width="59"
-            /></a>
+            <button class="button" aria-label="Show details brand">
+              <svg class="button-icon">
+                <use href="./images/sprite.svg#clientsbrand"></use>
+              </svg>
+            </button>
           </li>
           <li>
-            <a href="#"
-              ><img src="./images/tagline.svg" alt="tagline" width="89"
-            /></a>
+            <button class="button" aria-label="Show details tagline">
+              <svg class="button-icon">
+                <use href="./images/sprite.svg#clientstagline"></use>
+              </svg>
+            </button>
           </li>
         </ul>
       </div>
@@ -276,18 +395,34 @@
         <ul class="footer-item join-us">
           <li class="list-title">присоединяйтесь</li>
           <li>
-            <ul class="social-media-links">
-              <li class="icon-wrapper">
-                <a href="#" class="icon insta"></a>
+            <ul class="social-links">
+              <li>
+                <a href="#" class="link" aria-label="Ссылка на Instagram">
+                  <svg class="link-icon">
+                    <use href="./images/sprite.svg#footerlinkinstagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="icon-wrapper">
-                <a href="#" class="icon twitter"></a>
+              <li>
+                <a href="#" class="link" aria-label="Ссылка на Twitter">
+                  <svg class="link-icon">
+                    <use href="./images/sprite.svg#footerlinktwitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="icon-wrapper">
-                <a href="#" class="icon facebook"></a>
+              <li>
+                <a href="#" class="link" aria-label="Ссылка на Facebook">
+                  <svg class="link-icon">
+                    <use href="./images/sprite.svg#footerlinkfacebook"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="icon-wrapper">
-                <a href="#" class="icon linkedIn"></a>
+              <li>
+                <a href="#" class="link" aria-label="Ссылка на Linkedin">
+                  <svg class="link-icon">
+                    <use href="./images/sprite.svg#footerlinklinkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </li>
@@ -297,7 +432,9 @@
           <li class="list-title">подпишитесь на рассылку</li>
           <li class="form">
             <!-- Здесь будет форма -->
-            <a href="#" class="btn btn-primary btn-fixed-size">Подписаться</a>
+            <a href="#" class="btn btn-primary btn-fixed-size">
+              <span>Подписаться</span></a
+            >
           </li>
         </ul>
       </div>
