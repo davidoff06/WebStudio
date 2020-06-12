@@ -237,16 +237,26 @@
           </li>
         </ul>
 
-        <ul class="footer-item">
+        <ul class="footer-item subscribe">
           <li class="list-title">подпишитесь на рассылку</li>
           <li class="form">
             <!-- Здесь будет форма -->
-            <a href="#" class="btn btn-primary btn-fixed-size">
-              <span>Подписаться</span></a
-            >
+            <form id="subscribe-form" action="#">
+              <input
+                class="form-input"
+                type="email"
+                id="subscribeEmail"
+                name="subscribeEmail"
+                placeholder="E-mail"
+              />
+              <button class="btn btn-primary btn-fixed-size">
+                Подписаться
+              </button>
+            </form>
           </li>
         </ul>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
